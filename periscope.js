@@ -1,7 +1,7 @@
 var request = require('request');
 
 function periscope(url, callback) {
-	var urlmatch = url.match(/periscope.tv\/w\/(.*)/i)
+	var urlmatch = url.match(/periscope.tv\/w\/(.*)/i);
 
 	if (urlmatch === null) {
 		callback('Url error: Not a periscope url');
